@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(199, 199, 199);
+}
+header{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1E3C72;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 10px #0000004d;
+}
+
+.general{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.tarjeta{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta img{
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3{
+    color: #1E3C72;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+button{
+    background: #1E3C72;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+button:hover{
+    background: #162B54;
+    transform: scale(1.1);
+}
+
+footer{
+    text-align: center;
+    background-color: #1E3C72;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+}
+.iconos{
+    font-size: 30px;
+    margin: 10px 12px;
+}
+textarea{
+    text-align: justify;
+    width: 120px;
+    height: 120px;
+    max-width: 120px;
+    max-height: 150px;
+}
+
