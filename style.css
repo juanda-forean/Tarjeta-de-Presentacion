@@ -1,7 +1,10 @@
-body{
+body {
     background-color: rgb(199, 199, 199);
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-header{
+
+header {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -12,16 +15,16 @@ header{
     box-shadow: 0px 5px 10px #0000004d;
 }
 
-.general{
+.general {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
 }
 
-.tarjeta{
+.tarjeta {
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -30,31 +33,32 @@ header{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tarjeta:hover{
+.tarjeta:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.tarjeta img{
+.tarjeta img {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-h2, h3{
+h2, h3 {
     color: #1E3C72;
     margin-top: 15px;
     text-transform: uppercase;
 }
 
-p{
+p {
     font-size: 16px;
     color: #555;
     text-align: justify;
     line-height: 1.6;
 }
 
-button{
+button {
     background: #1E3C72;
     color: white;
     border: none;
@@ -68,12 +72,12 @@ button{
     margin: 20px auto 0;
 }
 
-button:hover{
+button:hover {
     background: #162B54;
     transform: scale(1.1);
 }
 
-footer{
+footer {
     text-align: center;
     background-color: #1E3C72;
     color: white;
@@ -82,15 +86,85 @@ footer{
     font-weight: bold;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
 }
-.iconos{
+
+.iconos {
     font-size: 30px;
     margin: 10px 12px;
 }
-textarea{
-    text-align: justify;
-    width: 120px;
-    height: 120px;
-    max-width: 120px;
-    max-height: 150px;
+
+.iconos a {
+    color: #1E3C72;
+    transition: color 0.3s ease;
 }
 
+.iconos a:hover {
+    color: #162B54;
+}
+
+textarea {
+    text-align: justify;
+    width: 100%;
+    max-width: 300px;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .general {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .tarjeta {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 16px;
+    }
+
+    .tarjeta {
+        padding: 10px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .iconos {
+        font-size: 24px;
+    }
+}
